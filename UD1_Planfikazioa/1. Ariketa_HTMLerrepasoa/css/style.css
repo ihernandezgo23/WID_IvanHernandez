@@ -1,0 +1,19 @@
+header {
+    background-color: #333333;
+    height: 30px;
+    padding-top: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+}
+
+.middle {
+    text-align: center;
+}
+
+table, th, td {
+    border:1px solid black;
+}
