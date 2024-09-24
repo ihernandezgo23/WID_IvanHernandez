@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #f53d00;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.nav {
+    background-color: #00c3c3;
+    text-align: right;
+    padding: 10px;
+}
+
+.nav .ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav .ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+}
+
+.section {
+    background-color: #ffec00;
+    flex-basis: 20%;
+    padding: 20px;
+}
+
+.section article {
+    margin-bottom: 20px;
+}
+
+.section article h2 {
+    margin: 0;
+}
+
+.section article p {
+    margin-top: 5px;
+}
+
+.aside {
+    flex-basis: 80%;
+    background-color: #ff00ff;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    padding: 5px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.footer {
+    background-color: #00e300;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: black;
+}
+
+@media (min-width: 1000px) {
+    .main {
+        flex-direction: row;
+    }
+    
+    .section {
+        flex-basis: 20%;
+    }
+
+    .aside {
+        flex-basis: 80%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .main {
+        flex-direction: row;
+    }
+
+    .section {
+        flex-basis: 20%;
+        order: 1;
+    }
+
+    .aside {
+        flex-basis: 80%;
+        order: 2;
+    }
+
+    .column {
+        flex-basis: 48%;
+    }
+
+    .nav .ul li {
+        margin-right: 10px;
+    }
+
+    .nav .ul li a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        flex-direction: row;
+    }
+
+    .section {
+        flex-basis: 50%;
+        order: 1;
+        padding: 10px;
+    }
+
+    .aside {
+        flex-basis: 50%;
+        order: 2;
+        padding: 10px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column {
+        flex-basis: 100%;
+        padding: 0;
+    }
+
+    .column img {
+        margin-bottom: 10px;
+    }
+
+    .nav .ul li {
+        margin-right: 5px;
+    }
+
+    .nav .ul li a {
+        font-size: 0.9em;
+    }
+}
