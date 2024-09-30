@@ -1,0 +1,30 @@
+body {
+    background: linear-gradient(to right, #d4a15b, #4b5a5c);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+  
+.title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+.title-section img {
+    height: 80px;
+    width: 80px;
+}
+
+.btn-custom {
+    background-color: #4b5a5c;
+    border: none;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
