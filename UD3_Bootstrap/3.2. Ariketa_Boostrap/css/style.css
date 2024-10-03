@@ -1,0 +1,34 @@
+@font-face {
+    font-family: ethnocentric;
+    src: url(../fonts/ethnocentric\ rg.otf);
+}
+
+* {
+    font-family: ethnocentric;
+}
+
+body {
+    padding-top: 8%;
+}
+
+.container {
+    margin-right: 30%;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container p {
+    font-size: 10px;
+    text-align: center;
+}
+
+.row {
+    text-align: center;
+    font-size: 12px;    
+}
+
+.row hr {
+    border: 2px solid black;
+}
