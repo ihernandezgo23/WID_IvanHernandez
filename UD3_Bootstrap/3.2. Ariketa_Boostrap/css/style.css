@@ -7,10 +7,6 @@
     font-family: ethnocentric;
 }
 
-body {
-    padding-top: 8%;
-}
-
 .container {
     margin-right: 30%;
 }
@@ -31,4 +27,14 @@ body {
 
 .row hr {
     border: 2px solid black;
+}
+
+#videos {
+    text-align: center;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
 }
