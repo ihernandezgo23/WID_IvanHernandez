@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: ethnocentric;
     src: url(../fonts/ethnocentric\ rg.otf);
@@ -5,6 +7,11 @@
 
 * {
     font-family: ethnocentric;
+}
+
+.body {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(43,45,66,1) 41%); 
 }
 
 .container {
@@ -31,6 +38,7 @@
 
 #videos {
     text-align: center;
+    color: white;
 }
 
 iframe {
