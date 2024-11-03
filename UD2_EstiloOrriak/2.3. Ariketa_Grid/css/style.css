@@ -1,90 +1,105 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Light gray background */
-}
-
-.header, .footer {
-    text-align: center;
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "content sidebar"
+        "footer footer";
+    grid-template-columns: 2fr 1fr;
     padding: 10px;
-    border: 1px solid #000;
-    background-color: white; /* Optional: keep header and footer white */
-}
-
-#logo img{
-    border-radius: 100% 100% 100%;
-    box-shadow: 3px 3px 3px;
-    width: 50%;
 }
 
 .header {
     grid-area: header;
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
     display: flex;
     justify-content: space-around;
+    border: 1px solid black;
+    padding: 20px;
+    align-items: center;
+}
+
+.header .logo {
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 100%;
+    align-items: center;
 }
 
 .nav {
-    display: flex;
-    justify-content: center; /* Center the nav items */
-    padding: 10px 0; /* Add padding for space above and below */
-    background-color: white; /* Optional: set background for the nav */
-    border: 1px solid #000; /* Add border to the nav */
+    grid-area: nav;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
 }
 
-.nav a {
-    padding: 10px 20px; /* Space around menu items */
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 15px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.nav ul li:hover {
+    background-color: orange;
+}
+
+.nav ul li a {
     text-decoration: none;
-    color: #000;
-    border-right: 1px solid #000;
-    margin: 0 10px; /* Add margin to the left and right of each link */
+    color: black;
+    font-weight: bold;
 }
 
-.nav a:hover {
-    background-color: red;
+.nav ul li a:hover {
     color: white;
-}
-
-.nav a:last-child {
-    border-right: none; /* Remove border from the last link */
+    background-color: orange;
 }
 
 .content {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    padding: 20px;
+    grid-area: content;
+    border: 1px solid black;
 }
 
-.main {
-    padding-right: 20px;
-    border-right: 1px solid #000;
+.content h2 {
+    text-align: center;
+}
+
+.content img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
 }
 
 .sidebar {
-    padding-left: 20px;
+    grid-column: sidebar;
+    border: 1px solid black;
 }
 
-.main h2, .sidebar h2 {
+.sidebar .noticias {
+    border: 1px solid black;
+}
+
+.sidebar .noticias h3 {
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
 }
 
-.main img {
-    display: block;
-    margin: 0 auto;
+
+.sidebar .video {
+    border: 1px solid black;
 }
 
-.main p, .sidebar p {
-    text-align: justify;
+.sidebar .video h3 {
+    text-align: center;
 }
 
 .footer {
-    font-size: 18px;
-    font-weight: bold;
+    grid-area: footer;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
 }
