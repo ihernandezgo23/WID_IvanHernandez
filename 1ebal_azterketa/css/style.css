@@ -26,9 +26,17 @@ section {
     flex-basis: 33%;
 }
 
+.column1 h2 {
+    text-align: center;
+}
+
 .column2 {
     background-color: lightgray;
     flex-basis: 33%;
+}
+
+.column2 h2 {
+    text-align: center;
 }
 
 .column3 {
