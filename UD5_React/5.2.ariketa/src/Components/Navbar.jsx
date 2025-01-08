@@ -18,19 +18,19 @@ export const Navbar = () => {
           <img className='w-8 h-8 mb-[87px]' src={closeBtn} onClick={handleClick} alt="" />
         </li>
         <li className='mb-8 sm:mb-0'>
-          <a className='hover:text-orange-600 sm:text-4' href="#">Home</a>
+          <a className='hover:text-SoftRed sm:text-4' href="#">Home</a>
         </li>
         <li className='mb-8 sm:mb-0'>
-          <a className='hover:text-orange-600' href="#">New</a>
+          <a className='hover:text-SoftRed' href="#">New</a>
         </li>
         <li className='mb-8 sm:mb-0'>
-          <a className='hover:text-orange-600' href="#">Popular</a>
+          <a className='hover:text-SoftRed' href="#">Popular</a>
         </li>
         <li className='mb-8 sm:mb-0'>
-          <a className='hover:text-orange-600' href="#">Trending</a>
+          <a className='hover:text-SoftRed' href="#">Trending</a>
         </li>
         <li className='mb-8 sm:mb-0'>
-          <a className='hover:text-orange-600' href="#">Categories</a>
+          <a className='hover:text-SoftRed' href="#">Categories</a>
         </li>
       </ul>
       <img className={`${menuClicked ? '' : 'hidden'} w-10 h-4 cursor-pointer sm:hidden`} src={burgerMenu} onClick={handleClick} alt="" />
