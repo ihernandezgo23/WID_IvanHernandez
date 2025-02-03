@@ -1,7 +1,7 @@
-import { Header } from "./Components/Header"
-import { MainArticle } from "./Components/MainArticle"
-import { NewContainer } from "./Components/NewContainer"
-import { ArticlesContainer } from "./Components/ArticlesContainer"
+import { Header } from "./components/Header"
+import { MainArticle } from "./components/MainArticle"
+import { NewContainer } from "./components/NewContainer"
+import { ArticlesContainer } from "./components/ArticlesContainer"
 
 export function App() {
   return (
@@ -15,5 +15,3 @@ export function App() {
     </main>
   )
 }
-
-export default App;
